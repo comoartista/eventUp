@@ -1,5 +1,7 @@
 // ========================= [ Header styles ] =========================
 .header {
+    background-color: $colorNeutral-800;
+
     &.fixed {
         position: fixed;
         left: 0;
@@ -7,17 +9,29 @@
         width: 100%;
         z-index: 2;
     }
+    &__btns {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+    }
+    &__btn {
+        padding: 1rem 2.4rem;
+        border-radius: 8px;
+        color: $colorWhite;
+        &:first-child {
+            background: transparent;
+        }
+        &:last-child {
+            background: $colorRed;
+        }
+    }
+
 }
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-}
-.logo {
-    a {
-        color: white;
-    }
 }
 
 // ========================== [ Menu styles ] ==========================
@@ -36,7 +50,7 @@
         color: white;
         display: flex;
         position: relative;
-        transition: 0.5s color;
+        transition: 0.3s color;
         &:after {
             position: absolute;
             content: '';
@@ -47,12 +61,9 @@
             width: 100%;
             transform: scale(0);
             transition: 0.5s transform;
-
-            // Comment if you need border animation
-            display: none;
         }
         &:hover {
-            color: #131418;
+            // color: #131418;
             &:after {
                 transform: scale(1);
             }
@@ -122,7 +133,7 @@
             position: absolute;
             height: 2px;
             width: 100%;
-            background: $burgerColor;
+            background: $burgerActiveColor;
             transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
         }
 
@@ -139,7 +150,7 @@
             top: 9px;
             right: 0;
             width: 100%;
-            background: $burgerColor;
+            background: $burgerActiveColor;
             height: 2px;
             transform: scale(1);
             transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;

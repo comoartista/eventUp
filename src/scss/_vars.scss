@@ -8,13 +8,7 @@ $breakpoint1194: 1193.98 + px;
 $breakpoint992: 991.98 + px;
 $breakpoint768: 767.98 + px;
 $breakpoint480: 479.98 + px;
-// Colors
-$mainColor: #131418;
 
-// Burger Menu
-$burgerBreakpoint: $breakpoint992;
-$burgerColor: #131418;
-$burgerActiveColor: #fefefe;
 
 // Fonts
 $fontMain: 'Poppins', sans-serif;
@@ -27,7 +21,16 @@ $colorRedDark:#953314;
 $colorNeutral-800:#0F1017;
 $colorNeutral-700:#27282E;
 $colorNeutral-500: #57585D;
-$neutral-color-400: #6F7074;
+$colorNeutral-400: #6F7074;
+$colorNeutral-300: #87888B;
 $colorNeutral-200: #9F9FA2;
 $colorNeutral-50: #CFCFD1;
 $colorGreyLight:#F8F8F8;
+
+// Colors
+$mainColor: #131418;
+
+// Burger Menu
+$burgerBreakpoint: $breakpoint992;
+$burgerColor: $colorNeutral-800;
+$burgerActiveColor: $colorWhite;

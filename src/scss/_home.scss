@@ -166,27 +166,7 @@
             }
         }
     }
-    &__unter-title {
-        font: 500 1.6rem / 2.8rem $fontMain;
-        color: $colorNeutral-200;
-        letter-spacing: 3.2px;
-        position: relative;
-        margin-left: 3rem;
-        text-transform: uppercase;
-        &::before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: -4rem;
-            transform: translateX(50%);
-            width: 2rem;
-            height: 2px;
-            background-color: $colorNeutral-200; 
-            z-index: 1;
-        }
-    }
     &__title {
-        margin-top: 1.6rem;
         max-width: 55rem;
         color: $colorWhite;
         @media (max-width: $breakpoint768) {
