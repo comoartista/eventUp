@@ -24,3 +24,19 @@ function burgerMenu() {
     })
 }
 burgerMenu()
+
+const checkbox = document.querySelector('#checkbox')
+const label = document.querySelector('#label')
+checkbox.addEventListener('change', showPlan)
+
+function showPlan() {
+    label.classList.toggle ('selected');
+    displayPrice();
+}
+
+function displayPrice() {
+    const prices = document.querySelectorAll('.subscription__price')
+    prices.forEach(price => {
+        price.classList.toggle('show-price')
+    });
+}

@@ -1,0 +1,96 @@
+.price-hero {
+    &__container {
+        text-align: center;
+    }
+    &__untertitle {
+        margin-top: 1.6rem;
+        text-transform: uppercase;
+        letter-spacing: 3.2px;
+    }
+    &__descr {
+        max-width: 75rem;
+        margin: 1.6rem auto 4rem;
+    }
+}
+
+.billing-options {
+    margin: 4rem 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__input {
+        display: none;
+    }
+    &__label {
+        height: 6rem;
+        width: 22.4rem;
+        border: 1px solid #E7E7E8;
+        border-radius: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+    }
+    #year {
+        color: $colorWhite;
+    }
+    &__period {
+        color: $colorNeutral-800;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__active {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0px;
+        background: $colorRed;
+        height: 100%;
+        width: 50%;
+        border-radius: 5rem;
+        z-index: -1;
+        transition: .4s ease-in-out;
+    }
+
+    /*toggle class*/
+    &__label.selected &__active{
+        left: 11.2rem;
+        transition: .4s ease-in-out;
+    }
+    &__label.selected {
+        #month {
+            color: $colorWhite;
+        }
+        #year {
+            color: $colorNeutral-800;
+        }
+    }
+}
+
+.show-price {
+    display: none;
+}
+.subscription {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.2rem;
+    
+    &__option {
+        display: flex;
+        flex-direction: column;
+        padding: 3.2rem;
+        border: 1px solid $colorNeutral-200;
+        border-radius: 1.5rem;
+    } 
+    &__price {
+        font: 600 5.6rem / 6.7rem $fontMain;
+        color: $colorNeutral-800;
+        span {
+            font: 400 1.6rem / 2.8rem $fontMain;
+            color: $colorNeutral-300;
+        }
+    }
+}

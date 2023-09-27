@@ -120,10 +120,14 @@ h3 {
     font: 600 2.8rem / 3.6rem $fontMain;
     color: $colorNeutral-800;
 }
-
 h4 {
     font: 600 2rem / 2.8rem $fontMain;
-    // color: $colorNeutral-800;
+}
+h5 {
+    font: 400 2rem / 2.8rem $fontMain;
+}
+h6 {
+    font: 400 1.6rem / 2.8rem $fontMain;
 }
 .text-small {
     font: 500 1.4rem / 2.6rem $fontMain;
