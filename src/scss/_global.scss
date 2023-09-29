@@ -92,9 +92,10 @@ body {
         padding-bottom: 5rem;
     }
 }
-
 h1 {
     font: 600 7rem / 8.4rem $fontMain;
+    color: $colorNeutral-800;
+
     @media (max-width: $breakpoint1194) {
         font: 600 5rem / 6rem $fontMain;
     }
@@ -130,7 +131,7 @@ h6 {
     font: 400 1.6rem / 2.8rem $fontMain;
 }
 .text-small {
-    font: 500 1.4rem / 2.6rem $fontMain;
+    font: 400 1.4rem / 2.6rem $fontMain;
 }
 .text-regular {
     font: 400 1.6rem / 2.8rem $fontMain;
@@ -164,9 +165,18 @@ h6 {
     border-radius: 8px;
     border: 1px solid transparent;
     padding: 1.6rem 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
     &__outline {
         background-color: transparent;
         border: 1px solid $colorWhite;
+    }
+    &__outline--red {
+        background-color: transparent;
+        color: $colorRed;
+        border: 1px solid $colorRed;
     }
 }
 img {

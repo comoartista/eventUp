@@ -25,6 +25,7 @@ function burgerMenu() {
 }
 burgerMenu()
 
+//Price Page
 const checkbox = document.querySelector('#checkbox')
 const label = document.querySelector('#label')
 checkbox.addEventListener('change', showPlan)
@@ -40,3 +41,22 @@ function displayPrice() {
         price.classList.toggle('show-price')
     });
 }
+
+function faq() {
+    const items = document.querySelectorAll('.faq__item-trigger');
+    items.forEach(item => {
+        item.addEventListener('click', () => {
+            const parent = item.parentNode;
+            parent.classList.toggle('faq__item-active');
+            document
+                .querySelectorAll('.faq__item')
+                .forEach(child => {
+                    if (child !== parent) {
+                        child.classList.remove('faq__item-active');
+                    }
+                });
+        });
+    });
+}
+faq();
+ 
