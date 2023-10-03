@@ -109,6 +109,7 @@ h1 {
 h2 {
     font: 600 4.4rem / 5.5rem $fontMain;
     color: $colorNeutral-800;
+    padding: 1.6rem 0 2.4rem;
     @media (max-width: $breakpoint768) {
         font: 600 3.2rem / 4.4rem $fontMain;
     }
