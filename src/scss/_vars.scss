@@ -1,5 +1,5 @@
 // Container & Breakpoints
-@use 'sass:math';
+@use "sass:math";
 $containerWidth: 1440;
 $containerPadding: 48;
 $containerSidePadding: math.div($containerPadding, 2);
@@ -9,28 +9,25 @@ $breakpoint992: 991.98 + px;
 $breakpoint768: 767.98 + px;
 $breakpoint480: 479.98 + px;
 
-
 // Fonts
-$fontMain: 'Poppins', sans-serif;
-$fontSecondary: 'Inter', sans-serif;
+$fontMain: "Poppins", sans-serif;
+$fontSecondary: "Inter", sans-serif;
 
 //Colors
-$colorWhite:#ffffff;
-$colorRed:#E14817;
-$colorRed-100:#B45233;
-$colorRed-800:#A83D1B;
-$colorRedDark:#953314;
-$colorNeutral-800:#0F1017;
-$colorNeutral-700:#27282E;
-$colorNeutral-500: #57585D;
-$colorNeutral-400: #6F7074;
-$colorNeutral-300: #87888B;
-$colorNeutral-200: #9F9FA2;
-$colorNeutral-50: #CFCFD1;
-$colorGreyLight:#F8F8F8;
-$colorGrey: #E7E7E8;
-
-
+$colorWhite: #ffffff;
+$colorRed: #e14817;
+$colorRed-100: #b45233;
+$colorRed-800: #a83d1b;
+$colorRedDark: #953314;
+$colorNeutral-800: #0f1017;
+$colorNeutral-700: #27282e;
+$colorNeutral-500: #57585d;
+$colorNeutral-400: #6f7074;
+$colorNeutral-300: #87888b;
+$colorNeutral-200: #9f9fa2;
+$colorNeutral-50: #cfcfd1;
+$colorGreyLight: #f8f8f8;
+$colorGrey: #e7e7e8;
 
 // Colors
 $mainColor: #131418;
