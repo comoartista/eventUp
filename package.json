@@ -27,6 +27,7 @@
     "sass": "^1.43.5"
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001546",
     "gh-pages": "^6.0.0"
   }
 }
