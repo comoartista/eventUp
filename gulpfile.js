@@ -1,6 +1,9 @@
 let project_folder = 'build'
 let source_folder = 'src'
 
+
+
+
 let path = {
     build: {
         html: project_folder + '/',
@@ -38,6 +41,17 @@ let { src, dest } = require('gulp'),
     rename = require('gulp-rename'),
     uglify = require('gulp-uglify-es').default,
     imagemin = require('gulp-imagemin')
+
+var deploy = require('gulp-gh-pages');
+
+gulp.task('deploy', function () {
+  return gulp.src("./" + project_folder + "/**/*")
+    .pipe(deploy({
+      remoteUrl: "https://comoartista.github.io/eventUp/",
+      branch: "main"
+    }))
+});
+
 
 // Browser Sync
 function browserSync(params) {
